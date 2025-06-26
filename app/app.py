@@ -10,9 +10,8 @@ def hello():
         r.incr("visits")
         visits = r.get("visits").decode()
     except redis.exceptions.RedisError as e:
-        app.logger.error(f"Redis error: {e})
-        visits = "unknown"
-    
+        app.logger.error(f"Redis error: {e}")
+        visits = "unknown"  
     return f"Hello! You have visited this page {visits} times."
 
 if __name__ == '__main__':

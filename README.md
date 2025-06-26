@@ -18,3 +18,10 @@ From the project directory, run:
 docker-compose up --build
 ```
 This builds the application image and starts both the Flask app and a Redis container. Once the services are running, visit `http://localhost:5000` in your browser.
+
+## Closing with Docker Compose
+To stop the Docker use:
+```
+docker-compose down
+```
+Thie automaticly stops the Docker Image and removes it

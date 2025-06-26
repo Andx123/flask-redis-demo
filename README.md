@@ -12,3 +12,9 @@ This project provides a simple Flask application that uses Redis to track page v
  cd flask-redis-demo
 ```
 Replace `<repo-url>` with the URL of this repository.
+## Running with Docker Compose
+From the project directory, run:
+```
+docker-compose up --build
+```
+This builds the application image and starts both the Flask app and a Redis container. Once the services are running, visit `http://localhost:5000` in your browser.
